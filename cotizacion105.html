@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <title></title>
+</head>
+      <body background="dcdcd.jpg">
+         
+          
+           <center><h1>Estrella de plata</h1></center>
+           <center>
+               <form action="" method = "post" >
+       
+ 
+        
+
+
+        <div>
+            <label for="No.C">Nombre completo:</label>
+            <input type="text" id="n_c" name="n_c" />
+        </div>
+        <div>
+            <label for="nom.">Tipo de envio(normal o express): </label>
+            <input type="text" id="tipo" name="tipo" />
+       </div>
+       <div>
+           <label for="pat.">Cantidad de bujias a comprar:</label>
+           <input type="text" id="can" name="can" />
+       </div>
+       <br/>
+       <input type="button" name="orden" id="orden" value="Generar compra" onClick="sub(); window.print()"  />
+        <center> Con envío express se le agrega el 80% 
+		</center>
+         </form>
+          <script>
+              var n_c = new String;
+              var tipo = new String;
+              var can = null;
+              function sub(){
+                  n_c = document.getElementsByName("n_c")[0].value;
+                  tipo = document.getElementsByName("tipo")[0].value;
+                  can = document.getElementsByName("can")[0].value;
+                  if(tipo == 'normal'){
+                      var total = can * 350;
+                  }else if(tipo == 'express'){
+                       total = can * 500;
+                  }
+                  var iva = total * .16 ;
+                  document.write("<center>");
+                  document.write("While Store <br/>");
+                  document.write(" <br/>");;
+                  document.write("RFC: 18TY31KT8 <br/>");
+				  document.write("Estrella de plata");
+                  document.write(" <br/>");
+                  document.write("Sucursal: Portal Web <br/>");
+                  document.write(" <br/>");
+                  document.write("Telefono 24 hrs.: 7222029425 <br/>");
+                  document.write(" <br/>");
+                  document.write("Quejas o sugerencias:00022 <br/>");
+                  document.write(" <br/>");
+                  document.write("Nombre del cliente: " + n_c + "<br/>");
+                  document.write("<br/>");
+                  document.write("Tipo de envio: " + tipo + "<br/>");
+                  document.write("<br/>");
+                  document.write("Iva: "+ iva +" <br/>");
+                  document.write("Total: " + total + "<br/>");
+                  document.write("<br/>");
+                  document.write("Por ningun motivo pierda este <br/>");
+                  document.write("documento, es avalado como  <br/>");
+                  document.write("comprobante <br/> Gracias!");
+                  document.write("<br/>");
+                  document.write("<br/>");
+                  
+                  document.write("</center>");
+                  
+              }
+              
+              
+               </script>
+           </center>
+            
+       
+      </body>
+         
+</html>

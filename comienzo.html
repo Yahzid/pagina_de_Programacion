@@ -1,0 +1,90 @@
+﻿
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="css/estilos2.css">
+	
+</head>
+<body background="fondo.JPG">
+    <div class="cod-container">
+        <div class="form-header">
+            <img src="images/Logo.png" >
+            <h1>tienda<span> online </span></h1>
+        </div>
+
+   
+      
+        
+        <div class="form-content">
+            <form name ="pagina para ingresar lo que sea" method="get" action="index.html">
+                <div class="form-title">
+                    <h3>Regístrate </h3>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" class="form-input" name="form-correo" id="Reg-correo" required>
+                    <label class="label" for="Reg-correo">Correo</label> 
+					
+                </div>
+
+                <div class="input-group">
+                    <input type="text" class="form-input" name="form-name" id="Reg-nom"required>
+                    <label class="label" for="Reg-nom">Nombre</label> 
+                </div>
+
+                <div class="input-group">
+                    <input type="text"  maxlength="12" class="form-input" name="form-telefono"  pattern="[0-9]+" id="Reg-Telefono"required>
+                    <label class="label" for="Telefono">Telefono</label>  
+                </div>
+				
+				 <div class="input-group">
+                    <input type="password" class="form-input" name="form-pass" id="Reg-pass"required>
+                    <label class="label" for="pass">Contraseña</label> 
+                </div>
+
+                <div class="input-group">
+                    <input type="password" class="form-input" name="form-rep-pass" id="Reg-rep-pass"required>
+                    <label class="label" for="pass-rep">confirmar Contraseña</label> 
+                </div>
+
+                <form name ="monitores" method="get" action="monitores.html">
+                <div class="input-group">
+                    <input type="submit" class="form-input" value="Registrate"/>
+                </div>
+				</form>
+				<div class = "input-group">
+					<!-- Actualizar -->
+					<form action="php/actualizar.php" >
+						<input type= "submit" value = "Actualizar registro" name = "btnActualizar"/>
+					</form>
+					<!-- Eliminar Registro -->
+					<form action="php/Eliminar registros.php" >
+						<input type= "submit" value = "Eliminar Registros" name = "btnEliminar"/>
+					</form>
+					<!-- Consultar -->
+					<form action = "php/consulta.php">
+						<input type = "submit" value = "Consultar registros" name = "btnConsultar"/>
+					</form>
+				</div>
+        </div>
+    </div>
+
+
+
+<?php
+
+if(isset($_POST['submit'])){
+	require("tipo.php");
+
+?>
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/form.js"></script>
+</body>
+</html>

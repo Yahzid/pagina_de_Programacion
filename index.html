@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>AIR FUCTION</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="estilos_3.css">
+		   <style>
+      body{
+        color:red;
+      }
+
+      .banner__titulo{
+        font-size: 3rem;
+      }
+
+      .banner__txt{
+          font-size: 2rem;
+      }
+
+
+
+      @media (max-width:800px) {
+        body{
+            background-color:yellow;
+        }
+      }
+
+      </style>
+    </head>
+    <body>
+        <header class="header">
+           <div class="contenedor">
+              <h1 class="logo">While store</h1>
+               <span name="btn-menu" id="btn-menu" ><img src="img/Menu_icon_2_icon-icons.com_71856.png"></span>
+              <nav class="nav" name="nav" id="nav">
+                  <ul class="menu">
+                      <li class="menu__item"><a class="menu__link select" href="E:/aerolinea/index.html">Inicio</a></li> 
+                      <li class="menu__item"><a class="menu__link" href="comienzo.html">Registrarse</a></li> 
+                      <li class="menu__item"><a class="menu__link" href="inicio_de_sesion.html">Iniciar sesion</a></li> 
+                       </ul>
+              </nav>
+               
+           </div>
+            
+        </header>
+        <div class="banner">
+            <img src="img/paisaje.jpg" alt="" class="banner__img">
+            <div class="contenedor">
+			<center>
+               <h2 class="banner__titulo">Disfruta de los trabajos del cetis 64 .</h2>
+                <p class="banner__txt">a los mejores precios</p>
+			</center>
+            </div>
+        </div>
+        <main class="main">
+            <div class="contenedor">
+                <section class="info">
+                    <article class="info__columna">
+                       <img src="img/Piezas.jpg" alt="" class="info__img1">
+                       <h2 class="info__titulo">Refacciones</h2>
+                       <p class="info__txt"> Desde:<br/>Precio de contado: $20000 mxn.<br/>A credito: $350 mxn mensuales.<br/><center><h1><a href="cotizacion.html">Comprar</a></center></p></h1>
+                    </article>
+                    <article class="info__columna">
+                       <img src="img/Program.jpg" alt="" class="info__img2">
+                       <h2 class="info__titulo">Programa</h2>
+                       <p class="info__txt">Desde:<br/>Precio de contado: $6800 mxn.<br/>A credito: $250 mxn mensuales.<br/><center><h1><a href="cotizacion2.html">Comprar</a></center></h1>
+                    </article>
+                    <article class="info__columna">
+                       <img src="img/Aspi.jpg" alt="" class="info__img3">
+                       <h2 class="info__titulo">Aspiradora de programaci&oacute;n</h2>
+                       <p class="info__txt"> Desde:<br/>Precio de contado: $9000 mxn.<br/>A credito: $300 mxn mensuales.<br/><center><h1><a href="cotizacion3.html">Comprar</a></center></h1>
+                    </article>
+                </section>
+             <section class="cursos">
+                 <h2 class="section__titulo">Carreras </h2>
+                 <div class="cursos__columna">
+                     <img src="img/Trabajo.jpg" alt="" class="cursos__img">
+                     <div class="cursos__descripcion">
+                         <h3 class="cursos__titulo">Trabajo Social</h3>
+                         <p class="cursos__txt"><center><h1><a href="Niñas.html">Comprar</a></center></h1>
+                     </div>
+                 </div>
+                 
+                 <div class="cursos__columna">
+                     <img src="img/Mecanica.jpg" alt="" class="cursos__img2">
+                     <div class="cursos__descripcion">
+                         <h3 class="cursos__titulo">Mecanica</h3>
+                         <p class="cursos__txt"><center><h1><a href="Mujeres.html">Comprar</a></center></h1>
+                     </div>
+                 </div>
+                 
+                 <div class="cursos__columna">
+                     <img src="img/Programa.jpg" alt="" class="cursos__img3">
+                     <div class="cursos__descripcion">
+                         <h3 class="cursos__titulo"> El poderosis&iacute;mo programaci&oacute;n</h3>
+                         <p class="cursos__txt"><center><h1><a href="hombres.html">Comprar</a></center></h1>
+                     </div>
+                 </div>
+				 
+				 <div class="cursos__columna">
+                     <img src="img/construccion.jpg" alt="" class="cursos__img3">
+                     <div class="cursos__descripcion">
+                         <h3 class="cursos__titulo">Construccion</h3>
+                         <p class="cursos__txt"><center><h1><a href="Construccion.html">Comprar</a></center></h1>
+                     </div>
+                 </div>
+				 
+				 <div class="cursos__columna">
+                     <img src="img/Electricidad.jpg" alt="" class="cursos__img3">
+                     <div class="cursos__descripcion">
+                         <h3 class="cursos__titulo">Electricidad</h3>
+                         <p class="cursos__txt"><center><h1><a href="electricidad.html">Comprar</a></center></h1>
+                     </div>
+                 </div>
+                 
+				 <div class="cursos__columna">
+                     <img src="img/CEtis.jpg" alt="" class="cursos__img3">
+                     <div class="cursos__descripcion">
+                         <h3 class="cursos__titulo"> Cetis</h3>
+                         <p class="cursos__txt"><center><h1><a href="http://www.cetis64.edu.mx/plantel">Mas informaci&oacute;n</a></center></h1>
+                     </div>
+                 </div>
+                
+             </section>   
+            </div>
+        </main>
+        <script src="js/menu.js"></script>
+
+
+<?php
+
+if(isset($_POST['submit'])){
+	require("tipo.php");
+
+?>
+
+
+
+
+
+    </body>
+</html>
